@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Imagem de Fundo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            /* Substitua pelo caminho correto da sua imagem */
+            background-image: url('https://www.redebrasilatual.com.br/wp-content/uploads/2017/12/9b789be7-1369-4af0-bfd8-49b458c061f4.jpeg');
+            background-color: rgb(255, 105, 5);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; /* Garante que o background ocupa toda a altura da viewport */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Alinha o conteúdo no topo */
+            align-items: center;
+            color: white; /* Cor do texto para contrastar com a imagem de fundo */
+            padding-top: 20px; /* Espaçamento no topo */
+        }
+
+        .title-container {
+            text-align: center;
+            margin-bottom: 20px; /* Espaço abaixo do título */
+        }
+
+        .pageTitle {
+            position: relative;
+            background: rgba(167, 162, 162, 0.6); /* Ajuste da opacidade do fundo */
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(13.5px);
+            -webkit-backdrop-filter: blur(13.5px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 10px 20px; /* Espaçamento interno da borda */
+            display: inline-block; /* Permite a aplicação de borda ao redor do texto */
+            margin-bottom: 20px; /* Espaço abaixo do título */
+        }
+
+        .container {
+            position: relative;
+            font-size: 18px; /* Tamanho do texto reduzido */
+            width: 80%;
+            max-width: 950px; /* Limita a largura do container para melhor legibilidade */
+            text-align: justify; /* Justifica o texto */
+            background: rgba(167, 162, 162, 0.6); /* Ajuste da opacidade do fundo */
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(13.5px);
+            -webkit-backdrop-filter: blur(13.5px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 20px; /* Espaçamento interno */
+            margin: 0 auto; /* Centraliza horizontalmente */
+        }
+
+        .container p {
+            font-size: 20px; /* Tamanho maior para a frase */
+            font-weight: bold; /* Texto em negrito */
+            margin-top: 10px; /* Espaço acima da frase */
+            text-align: left; /* Alinha o texto à esquerda */
+        }
+
+        .bullying-types {
+            margin-top: 10px; /* Espaço acima da lista */
+            list-style-type: none; /* Remove os marcadores da lista */
+            padding-left: 0; /* Remove o recuo padrão da lista */
+        }
+
+        .bullying-types li {
+            margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <div class="title-container">
+            <!-- Título da página -->
+            <h1 class="pageTitle">Quais tipos de bullying?</h1>
+        </div>
+        
+        <div class="container">
+            <!-- Conteúdo da página -->
+            <p><strong>Bullying por orientação sexual ou identidade de gênero:</strong> Violência baseada na orientação sexual ou identidade de gênero, praticada por estudantes, professores ou funcionários. Pode causar problemas psicológicos, evasão escolar e violência.</p>
+            <p><strong>Bullying racial:</strong> Relacionado ao assédio moral e uso de termos pejorativos por causa da cor da pele. As vítimas enfrentam insultos e violência, podendo desenvolver baixa autoestima e depressão. É necessário combater a exclusão e segregação racial nas escolas.</p>
+            <p><strong>Bullying cibernético:</strong> Uso de tecnologias digitais para intimidar ou assediar alguém. Inclui mensagens ofensivas, rumores, exclusão, falsificação de identidade e divulgação de conteúdo privado. Pode causar sérios danos emocionais e psicológicos. Prevenção inclui educação sobre uso responsável da tecnologia, denúncia e bloqueio de agressores, e apoio às vítimas.</p>
+            <p><strong>Bullying relacional ou social:</strong> Agressão que prejudica relações sociais ou a reputação de uma pessoa. Manifesta-se por exclusão social, rumores e manipulação de amizades. Afeta silenciosamente a autoestima e o bem-estar emocional das vítimas.</p>
+            <p><strong>Lei nº 13.185/2015:</strong> Estabelece o Programa de Combate à Intimidação Sistemática (Bullying) no Brasil. Define bullying como ato de violência física ou psicológica, intencional e repetitivo. Visa prevenir e combater o bullying com ações educativas, capacitação de profissionais, e apoio psicológico e jurídico às vítimas. Responsabiliza escolas e instituições pela implementação de medidas preventivas e corretivas.</p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript incorporado
+        console.log('Página carregada!');
+    </script>
+</body>
+</html>

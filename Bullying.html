@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ICOM</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .navbar-nav .nav-link {
+            font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+        }
+        .header-container {
+            padding-top: 30px; /* Ajuste o espaçamento superior conforme necessário */
+        }
+        .logo-text {
+            position: absolute;
+            top: 15px;
+            left: 90px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #f7f2f2; /* Cor do texto branco */
+        }
+
+        /* Ajustes para dispositivos móveis */
+        @media (max-width: 991.98px) {
+            .header-container {
+                padding-top: 15px; /* Reduz o espaçamento superior em telas menores */
+            }
+            .logo-text {
+                left: 10px; /* Ajusta a posição do texto do logo para telas menores */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
+    <div class="container">
+        <a class='navbar-brand logo' href='index.html' style="padding: 0; position: relative;">
+            <img src="assets/images/Phd.jpg" alt="Logo" style="height: 70px;">
+            <span class="logo-text">2 Reg 5 manhã</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+            <i class="mdi mdi-menu"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active"></li>
+                <li class="nav-item">
+                    <a href="tipos-bullying.html" class="nav-link">Quais os Tipos De Bullying ?</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Solução.html" class="nav-link">Como Solucionar ?</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Ajuda.html" class="nav-link">Peça Ajuda !</a>
+                </li>
+                <li class="nav-item"></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="home-bg section h-100vh" id="home">
+    <div class="bg-overlay"></div>
+    <div class="container z-index header-container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="text-white text-center">
+                    <h2>Bem Vindo ao Nosso Site</h2>
+                    <h1 class="header_title mb-0 mt-3"><span class="element fw-bold" data-elements="Diga não ao bullying"></span></h1>
+                    <h2 class="subheader_title mt-3">E.E.Professor Helvécio Dahe</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll_down">
+        <a href="#about" class="scroll">
+            <i class="mbri-arrow-down text-white"></i>
+        </a>
+    </div>
+</section>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/typed.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(".element").each(function() {
+        var $this = $(this);
+        $this.typed({
+            strings: $this.attr('data-elements').split(','),
+            typeSpeed: 100,
+            backDelay: 3000
+        });
+    });
+</script>
+</body>
+</html>

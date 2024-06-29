@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Imagem de Fundo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            /* Substitua pelo caminho correto da sua imagem */
+            background-image: url('https://blog.rogers.edu.mx/hs-fs/hubfs/blog/2017/Enero/victima%20del%20bullying.jpg?width=1857&height=1224&name=victima%20del%20bullying.jpg');
+        
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; /* Garante que o background ocupa toda a altura da viewport */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Alinha o conteúdo no topo */
+            align-items: center;
+            color: white; /* Cor do texto para contrastar com a imagem de fundo */
+            padding-top: 20px; /* Espaçamento no topo */
+        }
+
+        .title-container {
+            text-align: center;
+            margin-bottom: 20px; /* Espaço abaixo do título */
+        }
+
+        .pageTitle {
+            position: relative;
+            background: rgba(167, 162, 162, 0.6); /* Ajuste da opacidade do fundo */
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(13.5px);
+            -webkit-backdrop-filter: blur(13.5px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 10px 20px; /* Espaçamento interno da borda */
+            display: inline-block; /* Permite a aplicação de borda ao redor do texto */
+            margin-bottom: 20px; /* Espaço abaixo do título */
+        }
+
+        .container {
+            position: relative;
+            font-size: 18px; /* Tamanho do texto reduzido */
+            width: 80%;
+            max-width: 950px; /* Limita a largura do container para melhor legibilidade */
+            text-align: justify; /* Justifica o texto */
+            background: rgba(167, 162, 162, 0.6); /* Ajuste da opacidade do fundo */
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(13.5px);
+            -webkit-backdrop-filter: blur(13.5px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 20px; /* Espaçamento interno */
+            margin: 120px auto 0 auto; /* Espaçamento superior de 120px e centralização horizontal */
+        }
+
+        .container p {
+            font-size: 20px; /* Tamanho maior para a frase */
+            font-weight: bold; /* Texto em negrito */
+            margin-top: 10px; /* Espaço acima da frase */
+            text-align: left; /* Alinha o texto à esquerda */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <div class="title-container">
+            <!-- Título da página -->
+            <h1 class="pageTitle">Qual a solução?</h1>
+        </div>
+        
+        <div class="container">
+            <!-- Conteúdo da página -->
+            <p>A melhor maneira de solucionar o problema do bullying é através do diálogo e da conscientização. É fundamental educar não apenas os agressores, mas também aqueles que assistem, repetem ou indiretamente contribuem com o bullying. Todos têm um papel crucial na manutenção ou na interrupção desse ciclo de agressividade. Promover um ambiente de respeito e empatia, onde todos entendam as consequências de suas ações, é essencial para combater o bullying eficazmente.</p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript incorporado
+        console.log('Página carregada!');
+    </script>
+</body>
+</html>

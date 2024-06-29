@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Imagem de Fundo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkT4-ab6ZxyBxqGR34qV9a2k3dv7I0wbnmgFTj9fRbu8ryAEC4');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            color: #fff; /* Cor do texto para contraste */
+            padding-top: 20px;
+        }
+
+        .title-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .pageTitle {
+            background: rgba(167, 162, 162, 0.6);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(13.5px);
+            -webkit-backdrop-filter: blur(13.5px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 10px 20px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            font-size: 18px;
+            width: 80%;
+            max-width: 950px;
+            text-align: justify;
+            background: rgba(167, 162, 162, 0.6);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(13.5px);
+            -webkit-backdrop-filter: blur(13.5px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 20px;
+            margin: 120px auto 0 auto;
+        }
+
+        .container p {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .container a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <div class="title-container">
+            <h1 class="pageTitle">Peça Ajuda!</h1>
+        </div>
+        
+        <div class="container">
+            <p>Se você ou alguém que você conhece está enfrentando bullying, saiba que não está sozinho. Estamos aqui para oferecer apoio e orientação. Entre em contato conosco hoje mesmo para descobrir como podemos ajudar a criar um ambiente escolar mais seguro e acolhedor. Visite o site <a href="https://www.escolasembullying.com.br" target="_blank">Abrace - Escola Sem Bullying</a> para mais informações.</p>
+        </div>
+    </div>
+
+    <script>
+        console.log('Página carregada!');
+    </script>
+</body>
+</html>
